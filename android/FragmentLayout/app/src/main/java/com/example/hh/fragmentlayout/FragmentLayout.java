@@ -137,6 +137,7 @@ public class FragmentLayout extends Activity {
                     ft.replace(R.id.details, details);
 
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//                    ft.addToBackStack(null);
                     ft.commit();
                 }
 

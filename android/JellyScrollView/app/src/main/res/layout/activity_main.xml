@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.hh.jellyscrollview.JellyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#e2d9d9" tools:context="com.example.hh.jellyscrollview.MainActivity">
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button android:id="@+id/personal_setting_txt" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp" android:alpha="0.8"
+            android:background="#b9e4e0" android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+</com.example.hh.jellyscrollview.JellyScrollView>

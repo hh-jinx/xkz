@@ -39,6 +39,7 @@ public class SlideMenu extends FrameLayout {
         menuView = getChildAt(0);
         mainView = getChildAt(1);
         menuWidth = menuView.getLayoutParams().width;
+        Log.i("HH", "onFinishInflate---menuWidth:" + menuWidth);
     }
 
     /**
@@ -73,7 +74,6 @@ public class SlideMenu extends FrameLayout {
                 break;
         }
         return super.onInterceptTouchEvent(ev);
-//		return super.onInterceptTouchEvent(ev);
     }
 
     /**
@@ -84,7 +84,10 @@ public class SlideMenu extends FrameLayout {
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
 //		Log.e("MAIN", "L: "+l+"   t: "+t  +"  r: "+r  + "   b: "+b);
         menuView.layout(-menuWidth, 0, 0, menuView.getMeasuredHeight());
+        Log.i("hh", "onLayout1：" + menuWidth + ":" + menuView.getMeasuredHeight());
         mainView.layout(0, 0, r, b);
+        Log.i("hh", "onLayout2：" + l + ":" + t + ":" + r + ":" + b);
+
     }
 
     private int downX;
@@ -94,13 +97,15 @@ public class SlideMenu extends FrameLayout {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 downX = (int) event.getX();
+                Log.i("hh", "onTouchEventDown:" + downX);
                 break;
             case MotionEvent.ACTION_MOVE:
                 int moveX = (int) event.getX();
                 int deltaX = (int) (moveX - downX);
 
+                Log.i("hh", "getScrollX:" + getScrollX());
                 int newScrollX = getScrollX() - deltaX;
-
+                Log.i("hh", "onTouchEventMove:" + moveX + ":" + newScrollX);
                 if (newScrollX < -menuWidth) newScrollX = -menuWidth;
                 if (newScrollX > 0) newScrollX = 0;
 
