@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="open"
+        android:title="打开">
+
+        <Preference
+            android:key="pf_date"
+            android:summary="点击编辑"
+            android:title="上线日期"></Preference>
+    </PreferenceScreen>
+
+</PreferenceScreen>

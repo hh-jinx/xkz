@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_pop_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hh.popupwindowtest.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pop_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_above="@+id/im_pop_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/close" />
+
+        <ImageView
+            android:id="@+id/im_pop_img"
+            android:layout_width="260dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/my_page_guide" />
+
+    </RelativeLayout>
+
+</FrameLayout>

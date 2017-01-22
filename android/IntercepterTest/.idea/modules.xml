@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IntercepterTest.iml" filepath="$PROJECT_DIR$/IntercepterTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp-3.5.0.jar/okhttp-3.5.0.jar.iml" filepath="$PROJECT_DIR$/okhttp-3.5.0.jar/okhttp-3.5.0.jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okio-1.11.0.jar/okio-1.11.0.jar.iml" filepath="$PROJECT_DIR$/okio-1.11.0.jar/okio-1.11.0.jar.iml" />
+    </modules>
+  </component>
+</project>

@@ -9,6 +9,7 @@ import android.support.design.widget.TextInputLayout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     Snackbar snackbar;
     private TextInputLayout input_account;
     private TextInputLayout input_pass;
+    private Button snack_show;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,6 @@ public class MainActivity extends Activity {
         coordl = (CoordinatorLayout) findViewById(R.id.coordl);
         input_account.setEnabled(true);
         input_pass.setEnabled(true);
-
         snackbar = Snackbar.make(coordl, "actionbar", Snackbar.LENGTH_SHORT).setAction("action", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +68,18 @@ public class MainActivity extends Activity {
                 super.onShown(snackbar);
             }
         }).show();
+    }
 
+    public void snackShow(View view) {
+//        LinearLayout linearLayout = new LinearLayout(this);
+//        CoordinatorLayout coordinatorLayout = new CoordinatorLayout(this);
+//        linearLayout.addView(coordinatorLayout);
+//
+        snack_show = (Button) findViewById(R.id.snack_show);
+        CoordinatorLayout coordinatorlayout = (CoordinatorLayout) findViewById(R.id.coordinatorlayout);
+//        View view1 = View.inflate(this, R.layout.show, null);
+//        Button button = (Button) view1.findViewById(R.id.snack_show);
+        Snackbar.make(snack_show, "222222", Snackbar.LENGTH_LONG).show();
     }
 
     //设置文本和背景颜色
